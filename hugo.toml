@@ -1,0 +1,6 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'JudgeMyLawyer⚖️ '
+theme = 'PaperMod'
+[params]
+  homeInfoParams = {Title = "⚖️ JudgeMyLawyer", Content = "Find and rate lawyers in your area"}
