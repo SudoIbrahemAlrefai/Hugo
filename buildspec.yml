@@ -3,15 +3,16 @@ version: 0.2
 phases:
   install:
     commands:
-      - tar -xzf hugo_extended_0.121.0_linux-amd64.tar.gz
-      - mv hugo /usr/local/bin/hugo
-      - hugo version
+      - echo "Extracting Hugo binary..."
+      - tar -xzf hugo_extended_0.146.0_linux-amd64.tar.gz
+      - chmod +x hugo
+      - ./hugo version
   build:
     commands:
+      - echo "Building Hugo site..."
       - cd my-hugo-site
-      - hugo
-
+      - ../hugo --minify
 artifacts:
+  base-directory: my-hugo-site/public
   files:
     - '**/*'
-  base-directory: my-hugo-site/public
