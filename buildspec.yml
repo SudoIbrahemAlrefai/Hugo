@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - tar -xzf hugo_extended_0.121.0_linux-amd64.tar.gz
+      - mv hugo /usr/local/bin/hugo
+      - hugo version
+  build:
+    commands:
+      - cd my-hugo-site
+      - hugo
+
+artifacts:
+  files:
+    - '**/*'
+  base-directory: my-hugo-site/public
