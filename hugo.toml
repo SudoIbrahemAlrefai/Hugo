@@ -1,6 +1,11 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'JudgeMyLawyer⚖️ '
+title = 'JudgeMyLawyer⚖️'
 theme = 'PaperMod'
+
 [params]
-  homeInfoParams = {Title = "⚖️ JudgeMyLawyer", Content = "Find and rate lawyers in your area"}
+  mainSections = ["posts"]
+
+  [params.homeInfoParams]
+    Title = "⚖️ JudgeMyLawyer"
+    Content = "Find and rate lawyers in your area"
