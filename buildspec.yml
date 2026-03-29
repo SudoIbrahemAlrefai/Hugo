@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - echo "Extracting Hugo binary..."
-      - tar -xzf hugo_extended_0.146.0_linux-amd64.tar.gz
+      - tar -xzf hugo_extended_0.121.0_linux-amd64.tar.gz
       - chmod +x hugo
       - ./hugo version
   build:
