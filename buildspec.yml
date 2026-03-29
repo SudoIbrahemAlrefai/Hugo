@@ -12,7 +12,13 @@ phases:
     commands:
       - echo "Building Hugo site..."
       - rm -rf public
+      - echo "Contents of hugo.toml:"
+      - cat hugo.toml
       - ./hugo --minify
+      - echo "Contents of public/ after build:"
+      - ls public/
+      - echo "Checking index.html for Hello Professor:"
+      - grep -i "hello professor" public/index.html || echo "TEXT NOT FOUND IN INDEX"
 artifacts:
   base-directory: public
   files:
