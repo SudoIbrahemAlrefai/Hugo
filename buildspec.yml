@@ -10,9 +10,8 @@ phases:
   build:
     commands:
       - echo "Building Hugo site..."
-      - cd my-hugo-site
-      - ../hugo --minify
+      - ./hugo --minify
 artifacts:
-  base-directory: my-hugo-site/public
+  base-directory: public
   files:
     - '**/*'
