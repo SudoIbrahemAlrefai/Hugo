@@ -4,8 +4,6 @@ title = 'JudgeMyLawyer⚖️'
 theme = 'PaperMod'
 
 [params]
-  mainSections = ["posts"]
-
   [params.homeInfoParams]
     Title = "⚖️ JudgeMyLawyer"
-    Content = "Find and rate lawyers in your area"
+    Content = "Hello Professor! This is proof that CI/CD is working. This text was pushed to GitHub and automatically deployed to AWS S3 via CodePipeline."
